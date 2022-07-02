@@ -12,11 +12,11 @@ class BottomNavigationWidget extends StatelessWidget {
       valueListenable: indexChangeNotifier,
       builder: (context, int newIndex, _) {
         return Container(
-          decoration: BoxDecoration(
-            color: Colors.transparent,
+          decoration: const BoxDecoration(
+            color: kTransparentColor,
             border: Border(
               top: BorderSide(
-                color: Colors.grey.withOpacity(0.5),
+                color: kGreyItemColor,
                 width: 1,
               ),
             ),

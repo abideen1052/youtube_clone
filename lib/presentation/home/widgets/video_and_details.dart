@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ytube_clone/core/colors/colors.dart';
 import 'package:ytube_clone/core/constants/const.dart';
 import 'package:ytube_clone/presentation/widgets/main_text_widget.dart';
@@ -48,6 +49,7 @@ class VideoAndDetailsWidget extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: 8, top: 8, bottom: 28),
           child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const CircleAvatar(
                 backgroundImage: NetworkImage(
@@ -60,7 +62,7 @@ class VideoAndDetailsWidget extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const MainTextWidget(
-                      title: 'Pyali Movie Official Trailer | Dulqer Salman |',
+                      title: 'Pyali Movie Official Trailer |',
                     ),
                     kHeight5,
                     Row(
@@ -79,6 +81,15 @@ class VideoAndDetailsWidget extends StatelessWidget {
                   ],
                 ),
               ),
+              kwidth10,
+              const Padding(
+                padding: EdgeInsets.only(top: 9, left: 58),
+                child: FaIcon(
+                  FontAwesomeIcons.ellipsisVertical,
+                  color: kWhiteColor,
+                  size: 15,
+                ),
+              )
             ],
           ),
         )

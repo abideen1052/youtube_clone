@@ -9,7 +9,7 @@ class MainTextWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      maxLines: 1,
+      maxLines: 2,
       overflow: TextOverflow.ellipsis,
       title,
       style: GoogleFonts.roboto(

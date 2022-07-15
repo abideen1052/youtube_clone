@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ytube_clone/core/colors/colors.dart';
-import 'package:ytube_clone/presentation/home/widgets/appbar_main_wiget.dart';
+
 import 'package:ytube_clone/presentation/home/widgets/video_and_details.dart';
 import 'package:ytube_clone/presentation/subscriptions/widgets/sub_app_bar.dart';
 
@@ -13,12 +13,12 @@ class ScreenSubscriptions extends StatelessWidget {
         body: NestedScrollView(
       floatHeaderSlivers: true,
       headerSliverBuilder: (context, innerBoxIsScrolled) => [
-        SliverAppBar(
+        const SliverAppBar(
           floating: true,
           snap: true,
           backgroundColor: backgroundColor,
           toolbarHeight: 200,
-          flexibleSpace: const SubAppBarWidget(),
+          flexibleSpace: SubAppBarWidget(),
         )
       ],
       body: ListView.builder(

@@ -16,12 +16,12 @@ class ScreenHome extends StatelessWidget {
       body: NestedScrollView(
         floatHeaderSlivers: true,
         headerSliverBuilder: (context, innerBoxIsScrolled) => [
-          SliverAppBar(
+          const SliverAppBar(
             floating: true,
             snap: true,
             backgroundColor: backgroundColor,
             toolbarHeight: 90,
-            flexibleSpace: const AppBarMainWidget(),
+            flexibleSpace: AppBarMainWidget(),
           )
         ],
         body: ListView.builder(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ytube_clone/core/colors/colors.dart';
 import 'package:ytube_clone/core/constants/const.dart';
 import 'package:ytube_clone/presentation/home/widgets/appbar_list_item.dart';
+import 'package:ytube_clone/presentation/subscriptions/widgets/app_bar_avatar_widget.dart';
 import 'package:ytube_clone/presentation/widgets/app_bar_widget.dart';
 
 class SubAppBarWidget extends StatelessWidget {
@@ -43,7 +44,7 @@ class SubAppBarWidget extends StatelessWidget {
                 child: Container(
                   height: 100,
                   width: 60,
-                  color: const Color.fromARGB(255, 44, 42, 42),
+                  color: backgroundColor,
                   child: const Center(
                     child: Text(
                       'ALL',
@@ -55,7 +56,7 @@ class SubAppBarWidget extends StatelessWidget {
             ],
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 10, top: 10),
+            padding: const EdgeInsets.only(left: 10, top: 15),
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
@@ -86,41 +87,6 @@ class SubAppBarWidget extends StatelessWidget {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class AppBarAvatarWidget extends StatelessWidget {
-  const AppBarAvatarWidget({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      width: 70,
-      height: 100,
-      child: Padding(
-        padding: const EdgeInsets.only(top: 10),
-        child: Column(
-          children: const [
-            CircleAvatar(
-              radius: 28,
-              backgroundImage: NetworkImage(
-                  'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'),
-            ),
-            kHeight5,
-            Padding(
-              padding: EdgeInsets.only(left: 5, top: 5),
-              child: Text(
-                'England & Wales',
-                overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontSize: 13),
-              ),
-            )
-          ],
-        ),
       ),
     );
   }

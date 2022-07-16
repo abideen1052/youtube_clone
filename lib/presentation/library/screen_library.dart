@@ -99,91 +99,80 @@ class ScreenLibrary extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 50,
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: Row(
-                      children: [
-                        const Icon(
-                          Icons.add,
-                          size: 25,
-                          color: kBlueColor,
-                        ),
-                        kwidth15,
-                        Text(
-                          'New playlist',
-                          style: GoogleFonts.roboto(
-                            fontSize: 17,
-                            color: kBlueColor,
-                          ),
-                        ),
-                      ],
+                Padding(
+                  padding: const EdgeInsets.only(left: 8),
+                  child: ListTile(
+                    visualDensity: const VisualDensity(
+                      vertical: -3,
+                    ),
+                    horizontalTitleGap: 5,
+                    leading: const Padding(
+                      padding: EdgeInsets.only(top: 4),
+                      child: Icon(
+                        Icons.add,
+                        size: 25,
+                        color: kBlueColor,
+                      ),
+                    ),
+                    title: Text(
+                      'New playlist',
+                      style: GoogleFonts.roboto(
+                        fontSize: 17,
+                        color: kBlueColor,
+                      ),
                     ),
                   ),
                 ),
-                SizedBox(
-                  height: 50,
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: Row(
-                      children: [
-                        const Icon(
-                          Icons.access_time,
-                          size: 25,
-                          color: kWhiteColor,
-                        ),
-                        kwidth15,
-                        Padding(
-                          padding: const EdgeInsets.only(top: 13),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Watch Later',
-                                style: GoogleFonts.roboto(
-                                  fontSize: 17,
-                                ),
-                              ),
-                              const SubTextWidget(title: '2 unwatched videos')
-                            ],
-                          ),
-                        ),
-                      ],
+                Padding(
+                  padding: const EdgeInsets.only(left: 8),
+                  child: ListTile(
+                    visualDensity: const VisualDensity(
+                      vertical: -3,
                     ),
+                    horizontalTitleGap: 5,
+                    leading: const Padding(
+                      padding: EdgeInsets.only(top: 4),
+                      child: Icon(
+                        Icons.access_time,
+                        size: 25,
+                        color: kWhiteColor,
+                      ),
+                    ),
+                    title: Text(
+                      'Watch Later',
+                      style: GoogleFonts.roboto(
+                        fontSize: 17,
+                        color: kWhiteColor,
+                      ),
+                    ),
+                    subtitle: const SubTextWidget(title: '2 unwatched videos'),
                   ),
                 ),
-                SizedBox(
-                  height: 50,
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: Row(
-                      children: [
-                        const Icon(
-                          Icons.thumb_up_outlined,
-                          size: 25,
-                          color: kWhiteColor,
-                        ),
-                        kwidth15,
-                        Padding(
-                          padding: const EdgeInsets.only(top: 13),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Liked videos',
-                                style: GoogleFonts.roboto(
-                                  fontSize: 17,
-                                ),
-                              ),
-                              const SubTextWidget(title: '30 videos')
-                            ],
-                          ),
-                        ),
-                      ],
+                Padding(
+                  padding: const EdgeInsets.only(left: 8),
+                  child: ListTile(
+                    visualDensity: const VisualDensity(
+                      vertical: -3,
                     ),
+                    horizontalTitleGap: 5,
+                    leading: const Padding(
+                      padding: EdgeInsets.only(top: 4),
+                      child: Icon(
+                        Icons.thumb_up_outlined,
+                        size: 25,
+                        color: kWhiteColor,
+                      ),
+                    ),
+                    title: Text(
+                      'Liked videos',
+                      style: GoogleFonts.roboto(
+                        fontSize: 17,
+                        color: kWhiteColor,
+                      ),
+                    ),
+                    subtitle: const SubTextWidget(title: '30 videos'),
                   ),
-                ),
+                )
               ],
             ),
           ),

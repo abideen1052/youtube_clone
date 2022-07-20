@@ -9,7 +9,7 @@ class AppBarAvatarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 70,
+      width: 72,
       height: 100,
       child: Padding(
         padding: const EdgeInsets.only(top: 16),

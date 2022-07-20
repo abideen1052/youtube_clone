@@ -14,7 +14,7 @@ class HistoryWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 155,
-      width: 160,
+      width: 150,
       child: Padding(
         padding: const EdgeInsets.only(left: 5, right: 8),
         child: Column(

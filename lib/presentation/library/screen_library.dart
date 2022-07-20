@@ -57,23 +57,14 @@ class ScreenLibrary extends StatelessWidget {
                   ),
                 ),
                 kHeight10,
-                Padding(
-                  padding: const EdgeInsets.only(left: 10),
-                  child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: const [
-                        HistoryWidget(),
-                        HistoryWidget(),
-                        HistoryWidget(),
-                        HistoryWidget(),
-                        HistoryWidget(),
-                        HistoryWidget(),
-                        HistoryWidget(),
-                      ],
-                    ),
-                  ),
-                ),
+                SizedBox(
+                    height: 153,
+                    child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 10,
+                        itemBuilder: (context, index) {
+                          return const HistoryWidget();
+                        })),
                 const Divider(
                   thickness: 1,
                   color: kGreyItemColor,

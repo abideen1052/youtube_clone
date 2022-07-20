@@ -24,20 +24,14 @@ class SubAppBarWidget extends StatelessWidget {
           kHeight5,
           Stack(
             children: [
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: const [
-                    AppBarAvatarWidget(),
-                    AppBarAvatarWidget(),
-                    AppBarAvatarWidget(),
-                    AppBarAvatarWidget(),
-                    AppBarAvatarWidget(),
-                    AppBarAvatarWidget(),
-                    AppBarAvatarWidget(),
-                    AppBarAvatarWidget(),
-                  ],
-                ),
+              SizedBox(
+                height: 100,
+                child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 10,
+                    itemBuilder: (context, index) {
+                      return AppBarAvatarWidget();
+                    }),
               ),
               Positioned(
                 right: 0,

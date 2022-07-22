@@ -15,12 +15,11 @@ class AppBarWidget extends StatelessWidget {
       child: Row(
         children: [
           const SizedBox(
-            width: 30,
-            height: 30,
-            child: Image(
-                image: NetworkImage(
-                    'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/800px-YouTube_full-color_icon_%282017%29.svg.png')),
-          ),
+              width: 30,
+              height: 30,
+              child: Image(
+                  image: NetworkImage(
+                      'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/800px-YouTube_full-color_icon_%282017%29.svg.png'))),
           kwidth2,
           Text(
             'YouTube',

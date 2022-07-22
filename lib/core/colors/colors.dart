@@ -8,3 +8,4 @@ final kGreyColor5 = Colors.grey.withOpacity(0.5);
 const kGreyItemColor = Color.fromARGB(255, 51, 51, 51);
 const kGreyColor = Colors.grey;
 const kBlueColor = Colors.blue;
+const kSearchBarColor = Color.fromARGB(255, 22, 20, 20);

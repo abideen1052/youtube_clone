@@ -21,6 +21,7 @@ class _DropDownWidgetState extends State<DropDownWidget> {
   @override
   Widget build(BuildContext context) {
     return DropdownButton2(
+      underline: const SizedBox(),
       iconDisabledColor: kWhiteColor,
       iconEnabledColor: kWhiteColor,
       dropdownWidth: 118,

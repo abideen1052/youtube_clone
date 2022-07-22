@@ -30,7 +30,7 @@ class SubAppBarWidget extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     itemCount: 10,
                     itemBuilder: (context, index) {
-                      return AppBarAvatarWidget();
+                      return const AppBarAvatarWidget();
                     }),
               ),
               Positioned(

@@ -13,7 +13,7 @@ class MainTextWidget extends StatelessWidget {
       overflow: TextOverflow.ellipsis,
       title,
       style: GoogleFonts.roboto(
-        fontSize: 15.5,
+        fontSize: 16,
         fontWeight: FontWeight.w400,
       ),
     );

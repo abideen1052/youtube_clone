@@ -29,12 +29,12 @@ class ScreenShorts extends StatelessWidget {
                       backgroundImage: NetworkImage(
                           'https://image.tmdb.org/t/p/w500/8AT3qDRakZQSZ6HVj7sQFUzN07N.jpg'),
                     ),
-                    kwidth5,
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 5),
-                      child: const MainTextWidget(title: 'Channel Name'),
+                    kWidth5,
+                    const Padding(
+                      padding: EdgeInsets.only(bottom: 5),
+                      child: MainTextWidget(title: 'Channel Name'),
                     ),
-                    kwidth5,
+                    kWidth5,
                     SizedBox(
                       height: 25,
                       width: 99,

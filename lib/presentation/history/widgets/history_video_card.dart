@@ -25,7 +25,7 @@ class HistoryVideoCard extends StatelessWidget {
                   image: NetworkImage(
                       'https://images.hindustantimes.com/img/2021/12/18/550x309/virat_kohli_india1_1639822225902_1639822231637.jpg')),
             ),
-            kwidth15,
+            kWidth15,
             SizedBox(
                 height: 90,
                 width: 170,

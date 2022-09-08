@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ytube_clone/core/colors/colors.dart';
-import 'package:ytube_clone/core/constants/const.dart';
+
 import 'package:ytube_clone/presentation/widgets/sub_text_widget.dart';
 
 class LibraryTileWidget extends StatelessWidget {

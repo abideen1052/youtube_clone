@@ -68,20 +68,20 @@ class VideoAndDetailsWidget extends StatelessWidget {
                     Row(
                       children: const [
                         SubTextWidget(title: 'Dulquer Salman'),
-                        kwidth2,
+                        kWidth2,
                         SubTextWidget(title: '.'),
-                        kwidth2,
+                        kWidth2,
                         SubTextWidget(title: '100K views'),
-                        kwidth2,
+                        kWidth2,
                         SubTextWidget(title: '.'),
-                        kwidth2,
+                        kWidth2,
                         SubTextWidget(title: '20 hours ago'),
                       ],
                     ),
                   ],
                 ),
               ),
-              kwidth10,
+              kWidth10,
               const Padding(
                 padding: EdgeInsets.only(top: 9, left: 58),
                 child: FaIcon(

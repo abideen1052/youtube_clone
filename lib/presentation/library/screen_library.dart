@@ -39,7 +39,7 @@ class ScreenLibrary extends StatelessWidget {
                       size: 30,
                       color: kWhiteColor,
                     ),
-                    kwidth10,
+                    kWidth10,
                     Text(
                       'History',
                       style: GoogleFonts.roboto(
@@ -56,7 +56,7 @@ class ScreenLibrary extends StatelessWidget {
                         onPressed: () {
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context) {
-                            return ScreenHistory();
+                            return const ScreenHistory();
                           }));
                         },
                         child: const Text(

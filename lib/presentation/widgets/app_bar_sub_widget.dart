@@ -14,14 +14,14 @@ class AppBarSubWidget extends StatelessWidget {
         Text('History'),
         Spacer(),
         Icon(Icons.cast),
-        kwidth20,
+        kWidth20,
         Icon(Icons.search),
-        kwidth20,
+        kWidth20,
         FaIcon(
           FontAwesomeIcons.ellipsisVertical,
           size: 18,
         ),
-        kwidth20
+        kWidth20
       ],
     );
   }

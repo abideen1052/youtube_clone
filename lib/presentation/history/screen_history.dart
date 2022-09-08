@@ -63,7 +63,7 @@ class ScreenHistory extends StatelessWidget {
                             fit: BoxFit.cover,
                           ),
                         ),
-                        kwidth10,
+                        kWidth10,
                         Text(
                           'Shorts',
                           style: TextStyle(fontSize: 15, color: kWhiteColor),

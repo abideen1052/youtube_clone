@@ -3,20 +3,21 @@ import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ytube_clone/core/colors/colors.dart';
 
-class DropDownWidget extends StatefulWidget {
-  const DropDownWidget({Key? key}) : super(key: key);
+class SubscriptionDropDown extends StatefulWidget {
+  const SubscriptionDropDown({Key? key}) : super(key: key);
 
   @override
-  State<DropDownWidget> createState() => _DropDownWidgetState();
+  State<SubscriptionDropDown> createState() => _SubscriptionDropDownState();
 }
 
-class _DropDownWidgetState extends State<DropDownWidget> {
+class _SubscriptionDropDownState extends State<SubscriptionDropDown> {
   final List<String> items = [
-    'Recently added',
+    'Most relevent',
+    'New activity',
     'A-Z',
   ];
 
-  String? selectedValue = 'Recently added';
+  String? selectedValue = 'Most relevent';
 
   @override
   Widget build(BuildContext context) {

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ytube_clone/core/colors/colors.dart';
 import 'package:ytube_clone/core/constants/const.dart';
 import 'package:ytube_clone/presentation/home/widgets/appbar_list_item.dart';
+import 'package:ytube_clone/presentation/subscriptions/screen_all_subscription.dart';
 import 'package:ytube_clone/presentation/subscriptions/widgets/app_bar_avatar_widget.dart';
 import 'package:ytube_clone/presentation/widgets/app_bar_widget.dart';
 
@@ -39,12 +40,21 @@ class SubAppBarWidget extends StatelessWidget {
                   height: 100,
                   width: 60,
                   color: backgroundColor,
-                  child: const Center(
-                    child: Text(
+                  child: Center(
+                      child: TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) {
+                          return const ScreenAllSubscription();
+                        }),
+                      );
+                    },
+                    child: const Text(
                       'ALL',
                       style: TextStyle(color: Colors.blue, fontSize: 15),
                     ),
-                  ),
+                  )),
                 ),
               ),
             ],

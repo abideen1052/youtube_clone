@@ -17,7 +17,9 @@ class ScreenHistory extends StatelessWidget {
         backgroundColor: backgroundColor,
         elevation: 0,
         titleSpacing: 1,
-        title: const AppBarSubWidget(),
+        title: const AppBarSubWidget(
+          title: 'History',
+        ),
       ),
       body: ListView(
         children: [
